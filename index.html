@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+
+<html lang="pt-BR"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mapa de Criminalidade</title> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
+    <link rel="stylesheet" href="styles.css" /> 
+</head> 
+
+<body> 
+    <header> 
+        <h1>Mapa de Criminalidade</h1> 
+        <p>Saiba onde ocorrem mais crimes na sua área.</p> 
+    </header> 
+
+    <nav> 
+        <ul> 
+            <li><a href="#map-section">Mapa</a></li> 
+            <li><a href="#crime-info">Informações sobre Crimes</a></li> 
+            <li><a href="#contact">Contato</a></li> 
+        </ul> 
+    </nav> 
+
+    <section id="map-section"> 
+        <h2>Mapa Interativo</h2> 
+        <div id="map" style="height: 500px;"></div> 
+    </section> 
+
+    <section id="crime-info"> 
+        <h2>Informações sobre Crimes</h2> 
+        <p>Aqui você pode encontrar informações sobre os tipos de crimes mais comuns e dicas de segurança.</p> 
+        <ul> 
+            <li>Furtos: Dicas para evitar furtos e proteger seus bens.</li> 
+            <li>Roubos: Como se comportar em situações de risco.</li> 
+            <li>Vandalismo: O que fazer ao testemunhar um ato de vandalismo.</li> 
+        </ul> 
+    </section> 
+
+    <section id="contact"> 
+        <h2>Contato</h2> 
+        <form id="contact-form"> 
+            <label for="name">Nome:</label> 
+            <input type="text" id="name" required> 
+            <label for="email">E-mail:</label> 
+            <input type="email" id="email" required> 
+            <label for="message">Mensagem:</label> 
+            <textarea id="message" required></textarea> 
+            <button type="submit">Enviar</button> 
+        </form> 
+    </section> 
+
+    <footer> 
+        <p>&copy; 2024 Mapa de Criminalidade. Todos os direitos reservados.</p> 
+    </footer> 
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> 
+    <script src="script.js"></script> 
+
+</body> 
+</html> 
